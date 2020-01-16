@@ -1,0 +1,16 @@
+﻿body
+{
+}
+img
+{
+	margin: 10px;
+}
+#eka
+{
+	float: left;
+}
+
+#toka
+{
+	clear: both; float: right;
+}
