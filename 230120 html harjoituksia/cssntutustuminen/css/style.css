@@ -1,0 +1,25 @@
+﻿body
+{
+}
+header {
+    background-color: #29C19F;
+    height: 100px;
+}
+h1 {
+    color: #ffffff;
+    padding: 22px 0 0 20px;
+}
+nav {
+    background-color: #9EF5E2;
+    margin-left: 200px;
+    height: 20px;
+    width: 400px;
+}
+nav ul {
+    margin 0 0 0 -10px;
+}
+nav li {
+    float: left;
+    list-style-type: none;
+    padding: 0 10px;
+}

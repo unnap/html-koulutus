@@ -1,0 +1,34 @@
+﻿body
+{
+}
+table tbody tr:nth-child(even) {
+    background-color: #d5fbe3;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #f3deff;
+}
+table {
+    width: 450px;
+    border-collapse: collapse;
+}
+
+
+table td {
+    border: 1px solid gray;
+    text-align: right;
+}
+table thead th, thead td, tfoot td {
+    background-color: #5bbd90;
+    color: white;
+    font-weight: bold;
+}
+
+/*table thead th, tfoot td {
+    background-color: lightgray;
+}
+table tfoot td {
+    text-align: right;
+}*/
+th {
+    text-align: left;   
+}

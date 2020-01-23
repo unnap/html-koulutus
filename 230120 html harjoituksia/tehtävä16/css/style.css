@@ -1,0 +1,68 @@
+﻿body
+{
+}
+
+#otsikko {
+    color: teal;
+}
+
+#one {
+    color: #C4173F;
+    font-size: 5px;
+}
+#two {
+    color: #3BE2B8;
+    font-size: 10px;
+}
+#three {
+    color: #C8E9E0;
+    font-size: 15px;
+}
+#four {
+    color: #A8146E;
+    font-size: 20px;
+}
+#five {
+    color: #FFE991;
+    font-size: 25px;
+}
+#six {
+    color: #FFA243;
+    font-size: 30px;
+}
+#seven {
+    color: #B888E4;
+    font-size: 35px;
+}
+#eight {
+    color: #108B6C;
+    font-size: 40px;
+}
+#nine {
+    color: #F1CFE4;
+    font-size: 45px;
+}
+#ten {
+    color: #80E2C9;
+    font-size: 50px;
+}
+
+#tokao {
+    font-family: 'Teko', sans-serif;
+}
+
+#lori {
+    font-family: Onyx;
+}
+#lorii {
+    font-family: Rage;
+}
+#loriii {
+    font-family: Rosewood Std;
+}
+#loriv {
+    font-family: Garamond;
+}
+#lorv {
+    font-family: Verdana;
+}
