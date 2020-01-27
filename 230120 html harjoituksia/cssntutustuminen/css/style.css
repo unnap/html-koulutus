@@ -10,16 +10,59 @@ h1 {
     padding: 22px 0 0 20px;
 }
 nav {
-    background-color: #9EF5E2;
+    background: #9EF5E2;
     margin-left: 200px;
     height: 20px;
     width: 400px;
 }
 nav ul {
-    margin 0 0 0 -10px;
+    margin: 0 0 0 -10px;
 }
 nav li {
     float: left;
     list-style-type: none;
     padding: 0 10px;
+}
+section {
+	width: 400px;
+	background-color: #F69FE8;
+	margin-top: 20px;
+}
+h2 {
+	color: #fff;
+	padding: 10px 0 0 -10px;
+}
+hr {
+	color: #EC72D9;
+}
+article {
+	width: 400px;
+	/*background: #FFEDA5;*/
+}
+article p {
+	padding: 10px;
+}
+aside {
+	width: 200px;
+	height: 520px;
+	background-color: #FFEDA5;
+	float: right;
+	margin-top: -1px;
+}
+h3 {
+	color: #DF4CC8;
+	padding: 10px 0 0 10px;
+}
+aside article {
+	width: 200px;
+	/*background-color: #000;*/
+	color: #DF4CC8;
+}
+footer {
+	height: 40px;
+	background-color: #29C19F;
+	margin-top: -16px;
+}
+footer p {
+	padding: 10px 0 0 10px;
 }

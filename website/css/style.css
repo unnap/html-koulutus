@@ -1,0 +1,24 @@
+﻿body {
+	background: #555;
+	color: #fff;
+}
+header {
+	background: #000;
+}
+div {
+	background: #795887;
+}
+nav li {
+    float: left;
+    list-style-type: none;
+    padding: 0 10px;
+}
+article {
+	background: #000;
+}
+aside {
+	float: right;
+	background: #000;
+	height: 500px;
+	width: 200px;
+}
