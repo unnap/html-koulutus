@@ -5,20 +5,89 @@
 header {
 	background: #000;
 }
+header h1 {
+    text-shadow: 0 5px 7px 0px deeppink;
+    padding: 0 0 0 10px;
+    font-size: 40px;
+}
+.spinnyskull {
+    vertical-align: middle;
+}
+.clearfix {
+    overflow: auto;
+}
 div {
 	background: #795887;
 }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bbb;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li a:hover {
+    background-color: hotpink;
+}
+.active {
+    background-color: deeppink;
+}
+
+/*
 nav li {
     float: left;
     list-style-type: none;
-    padding: 0 10px;
+    background-color: #fff;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
 }
-article {
+    */
+#navi li {
+    list-style: none;
+}
+#navi a {
+    color: hotpink;
+    text-decoration: none;
+}
+#navi a:visited {
+    color: deeppink;
+}
+#navi a:hover {
+    color: lightpink;
+}
+#navi a:active {
+    color: black;
+}
+
+#main {
 	background: #000;
+    width: 70%;
+    margin: 10px 0 0 0;
+    padding: 7px;
 }
 aside {
 	float: right;
 	background: #000;
-	height: 500px;
-	width: 200px;
+	width: 25%;
+    margin: 10px;
+    padding: 7px;
+} 
+footer {
+    background: #bbb;
+    color: #000;
+    margin: -10px 0 0 0;
+    padding: 0 0 0 2px;
 }
