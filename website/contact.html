@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Harjoitus</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>
+        <img src="https://media.giphy.com/media/ySeqU9tC1eFjy/source.gif" class="spinnyskull">
+        Harjoitus HTML
+        <img src="https://media.giphy.com/media/ySeqU9tC1eFjy/source.gif" class="spinnyskull">
+		</h1>
+        <nav>
+			<ul id="navig">
+				<li><a href="index.html">Koti</a></li>
+				<li><a href="about.html">Minusta</a></li>
+				<li><a href="hobbies.html">Harrastukseni</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="contact.html" class="active">Ota yhteyttä</a></li>
+			</ul>
+		</nav>
+	</header>
+	<aside>
+    <article>
+		<h3>testitesti</h3>
+	</article>
+    </aside>
+    <section id="main">
+        <article>
+			<form action="/admin/process-form.php" method="post">
+				<fieldset>
+				<legend>Testitestitesti</legend>
+					<p>
+						<label>Nimi</label>
+						<br />
+						<input type="text" name="nimi" placeholder="Nimi">
+					</p>
+					<p>
+						<label>Salasana</label>
+						<br />
+						<input type="password" name="salasana">
+					</p>
+					<p>
+						<label>Pähkinä</label>
+						<br />
+						<select name="nuts">
+							<option value="cashew">cashew</option>
+							<option value="pekaani">pekaani</option>
+							<option value="saksa">saksanpähkinä</option>
+							<option value="peanut">maapähkinä</option>
+						</select>
+					</p>
+					<p>
+						<table>
+							<tr>
+								<td colspan="2"><label>Väri</label></td>
+							</tr>
+							<tr>
+								<td>
+								<input type="radio" name"vari" value="red">Punainen</input>
+								</td>
+								<td>
+								<input type="radio" name"vari" value="green">Vihreä</input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input type="radio" name"vari" value="violetti">Violetti</input>
+								</td>
+								<td>
+								<input type="radio" name"vari" value="oranssi">Oranssi</input>
+								</td>
+							</tr>
+						</table>
+					</p>
+					<p>
+						<table>
+							<tr>
+								<td colspan="2"><label>Eläin</label></td>
+							</tr>
+							<tr>
+								<td>
+								<input type="checkbox" name"elain" value="dog">Koira</input>
+								</td>
+								<td>
+								<input type="checkbox" name"elain" value="cat">Kissa</input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input type="checkbox" name"elain" value="spider">Hämähäkki</input>
+								</td>
+								<td>
+								<input type="checkbox" name"elain" value="octo">Mustekala</input>
+								</td>
+							</tr>
+						</table>
+					</p>
+					<p>
+						<label>Viesti</label>
+						<br />
+						<textarea name="viesti" id="viesti" placeholder="Viesti tähän"></textarea>			
+					</p>
+					<p>
+						<input type="submit" value="Lähetä">
+						<input type="reset" value="Reset">
+					</p>
+				</fieldset>
+			</form>
+        </article>
+    </section>
+    <footer>
+        <p>htmlhtmlhtml</p>
+    </footer>
+</body>
+</html>

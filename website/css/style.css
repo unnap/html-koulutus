@@ -97,6 +97,10 @@ aside {
     margin: 10px;
     padding: 7px;
 }
+#viesti {
+	width: 200px;
+	height: 100px;
+}
 footer {
     background: #bbb;
     color: #000;
