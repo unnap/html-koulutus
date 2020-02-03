@@ -78,16 +78,27 @@ nav li {
     margin: 10px 0 0 0;
     padding: 7px;
 }
+#kattimatti {
+		height: 450px;
+}
+#spookyskullbert {
+	height: 450px;
+}
+#miksi {
+	height: 450px;
+}
+#keudalogo {
+	width: 300px;
+}
 aside {
 	float: right;
 	background: #000;
 	width: 25%;
     margin: 10px;
     padding: 7px;
-} 
+}
 footer {
     background: #bbb;
     color: #000;
-    margin: -10px 0 0 0;
-    padding: 0 0 0 2px;
+		padding: 5px;
 }
