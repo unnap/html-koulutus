@@ -1,0 +1,149 @@
+﻿body {
+	background: #555;
+	color: #fff;
+}
+header {
+	background: #000;
+}
+header h1 {
+    text-shadow: 0 5px 7px 0px deeppink;
+    padding: 0 0 0 10px;
+    font-size: 40px;
+}
+#spinnyskull2 {
+    vertical-align: middle;
+}
+#spinnyskull1 {
+	float: left;
+}
+#navig {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bbb;
+}
+#navig li {
+    float: left;
+}
+#navig li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#navig li a:hover {
+    background-color: hotpink;
+}
+.active {
+    background-color: deeppink;
+}
+
+/*
+nav li {
+    float: left;
+    list-style-type: none;
+    background-color: #fff;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+    */
+#navi li {
+    list-style: none;
+}
+#navi a {
+    color: hotpink;
+    text-decoration: none;
+}
+#navi a:visited {
+    color: deeppink;
+}
+#navi a:hover {
+    color: lightpink;
+}
+#navi a:active {
+    color: black;
+}
+
+#main {
+	background: #000;
+    width: 70vw;
+    margin: 10px 0 0 0;
+    padding: 7px;
+}
+#kattimatti {
+		height: 450px;
+}
+#spookyskullbert {
+	height: 450px;
+}
+#miksi {
+	height: 450px;
+}
+#keudalogo {
+	width: 300px;
+}
+.right {
+	float: right;
+	background: #000;
+	width: 20%;
+    margin: 10px;
+    padding: 7px;
+}
+#viesti {
+	width: 200px;
+	height: 100px;
+}
+footer {
+    background: #bbb;
+    color: #000;
+		padding: 5px;
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+	#spinnyskull1 {
+		display: none;
+	}
+	#main, .right {
+		width: 96%;
+	}
+	.right {
+		float: none;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	#spinnyskull1 {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50vw;
+	}
+	#spinnyskull2 {
+		display: none;
+	}
+	.otsikko {
+		text-align: center;
+	}
+	#navig li {
+		float: none;
+		width: 100%;
+	}
+	#navig li a {
+		width: 100%;
+	}
+	#main, .right {
+		width: 100%;
+		padding: 10px;
+	}
+	.right {
+		float: none;
+		margin: 0;
+	}
+}
