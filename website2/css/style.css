@@ -1,4 +1,13 @@
-﻿body {
+﻿::-moz-selection {
+	color: #000;
+	background: #9EF5E2;
+}
+::selection {
+	color: #000;
+	background: #9EF5E2;
+}
+
+body {
 	background: #555;
 	color: #fff;
 }
@@ -16,6 +25,8 @@ header h1 {
 #spinnyskull1 {
 	float: left;
 }
+
+/* Header linkit */
 #navig {
     list-style-type: none;
     margin: 0;
@@ -41,19 +52,10 @@ header h1 {
     background-color: deeppink;
 }
 
-/*
-nav li {
-    float: left;
-    list-style-type: none;
-    background-color: #fff;
-    float: left;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-    */
+/* Aside linkit */
 #navi li {
     list-style: none;
+	overflow: hidden;
 }
 #navi a {
     color: hotpink;
@@ -69,24 +71,29 @@ nav li {
     color: black;
 }
 
+/* Maini */
 #main {
 	background: #000;
     width: 70vw;
     margin: 10px 0 0 0;
     padding: 7px;
 }
+
+/* Kuvat */
 #kattimatti {
-		height: 450px;
+	height: 450px;
 }
 #spookyskullbert {
 	height: 450px;
 }
 #miksi {
-	height: 450px;
+	width: 550px;
 }
 #keudalogo {
 	width: 300px;
 }
+
+/* Aside */
 .right {
 	float: right;
 	background: #000;
@@ -94,30 +101,81 @@ nav li {
     margin: 10px;
     padding: 7px;
 }
+
+/* Lomake */
+#nimi {
+	color: #DF4CC8;
+	background: #FDD8F7;
+}
+#nimi::placeholder {
+	color: #DF4CC8;
+	opacity: 1;
+}
+#nimi::-ms-input-placeholder {
+	color: #DF4CC8;
+}
 #viesti {
 	width: 200px;
 	height: 100px;
 }
+
 footer {
     background: #bbb;
     color: #000;
-		padding: 5px;
+	padding: 5px;
 }
 
-
+/* Responsiivisuus */
 @media screen and (max-width: 800px) and (min-width: 600px) {
-	#spinnyskull1 {
+	/*#spinnyskull1 {
 		display: none;
+	}*/
+	body {
+		font-size: 3vw;
+	}
+	h1 {
+		font-size: 10vw;
 	}
 	#main, .right {
-		width: 96%;
+	width: auto;
+	
 	}
 	.right {
 		float: none;
 		margin: 0;
 	}
+
+	/* Kuvat */
+	#kattimatti {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+	#spookyskullbert {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+	#miksi {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+	#keudalogo {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
 }
+
+
 @media screen and (max-width: 600px) {
+	body {
+		font-size: 4vw;
+	}
+	h1 {
+		font-size: 15vw;
+	}
 	#spinnyskull1 {
 		float: none;
 		display: block;
@@ -139,11 +197,36 @@ footer {
 		width: 100%;
 	}
 	#main, .right {
-		width: 100%;
+		width: auto;
 		padding: 10px;
+		overflow: hidden;
 	}
 	.right {
 		float: none;
 		margin: 0;
+	}
+
+	/* Kuvat */
+	#kattimatti {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+	#spookyskullbert {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+	#miksi {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+	#keudalogo {
+		width: auto;
+		max-width: 100%;
+		height: auto;
 	}
 }
