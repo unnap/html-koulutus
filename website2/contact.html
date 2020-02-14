@@ -5,6 +5,16 @@
     <meta charset="utf-8" />
     <title>Harjoitus</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/forms2.js"></script>
+  <!--<script>
+    function validateForm() {
+    var x = document.forms["nonsense"]["nimi"].value;
+    if (x == "") {
+      alert("Nimi pitää olla!");
+      return false;
+    }
+  }
+  </script>-->
 </head>
 <body>
 	<header>
@@ -32,23 +42,32 @@
     </aside>
     <section id="main">
         <article>
-			<form action="/admin/process-form.php" method="post">
+			<form action="/admin/process-form.php" method="post"
+      name="nonsense" onsubmit="return validateForm()">
 				<fieldset>
 				<legend>Testitestitesti</legend>
 					<p>
 						<label>Nimi</label>
 						<br />
-						<input type="text" name="nimi" placeholder="Nimi" id="nimi">
+						<input type="text" name="nimi" placeholder="Nimi" id="nimi"
+            maxlength="30">
 					</p>
-					<p>
+          <p>
+            <label>Ikä</label>
+            <br />
+            <input name="ika" placeholder="Älä ole alle 18v"
+            maxlength="3" id="age">
+          </p>
+					<!--<p>
 						<label>Salasana</label>
 						<br />
 						<input type="password" name="salasana">
-					</p>
+					</p>-->
 					<p>
 						<label>Pähkinä</label>
 						<br />
 						<select name="nuts">
+              <option value="valitse" selected>[VALITSE YKSI]</option>
 							<option value="cashew">cashew</option>
 							<option value="pekaani">pekaani</option>
 							<option value="saksa">saksanpähkinä</option>
@@ -79,6 +98,8 @@
 						</table>
 					</p>
 					<p>
+            <fieldset>
+              <legend>Eläin<abbr title="pakollinen">*</abbr></legend>
 						<table>
 							<tr>
 								<td colspan="2"><label>Eläin</label></td>
@@ -100,11 +121,13 @@
 								</td>
 							</tr>
 						</table>
+          </fieldset>
 					</p>
 					<p>
 						<label>Viesti</label>
 						<br />
-						<textarea name="viesti" id="viesti" placeholder="Viesti tähän"></textarea>			
+						<textarea name="viesti" id="viesti" placeholder="Viesti tähän"
+            maxlength="300"></textarea>
 					</p>
 					<p>
 						<input type="submit" value="Lähetä">
