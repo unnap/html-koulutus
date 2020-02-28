@@ -126,12 +126,13 @@
 					<p>
 						<label>Viesti</label>
 						<br />
-						<textarea name="viesti" id="viesti" placeholder="Viesti tähän"
-            maxlength="300"></textarea>
+						<textarea name="viesti" id="viesti" placeholder="Viesti tähän" onkeyup="countChars(this);"></textarea>
+            <br />
+            <span id="charNum">200</span> characters remaining
 					</p>
 					<p>
 						<input type="submit" value="Lähetä">
-						<input type="reset" value="Reset">
+						<input type="reset" value="Reset" onClick="return confirm('Tyhjennetäänkö lomake?')">
 					</p>
 				</fieldset>
 			</form>

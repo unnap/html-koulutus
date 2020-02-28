@@ -33,33 +33,56 @@ function validateForm()
     nuts.focus();
     return false;
   }
-  var intVastaus=-1;
+  var variCheck=-1;
 
   for (var i=0; i < document.nonsense.vari.length;i++)
   {
     if (document.nonsense.vari[i].checked==true)
     {
-        intVastaus=i;
+        variCheck=i;
     }
   }
-  if(intVastaus==-1)
+  if(variCheck==-1)
   {
   alert("Valitse YKSI väri");
   return (false);
   }
 
-var intVasta=-1;
+var elainCheck=-1;
 
 for (var i=0; i < document.nonsense.elain.length;i++)
 {
   if (document.nonsense.elain[i].checked==true)
   {
-      intVasta=i;
+      elainCheck=i;
   }
 }
-if(intVasta==-1)
+if(elainCheck==-1)
 {
-alert("Valitse eläin");
+alert("Pick one or more animals");
 return (false);
 }
+}
+
+/*Tyhjennys tarkistus*/
+
+function Tyhjennys() {
+  If confirm('Tyhjennetäänkö lomake?');
+    return true;
+  else
+    return false;
+}
+
+/* character count*/
+
+function countChars(obj) {
+    var maxLength = 200;
+    var strLength = obj.value.length;
+    var charRemain = (maxLength - strLength);
+
+    if(charRemain < 0) {
+        document.getElementById("charNum").innerHTML = '<span style="color: red;">You have exceeded the limit of '+maxLength+' characters</span>';
+    } else {
+        document.getElementById("charNum").innerHTML = charRemain+' characters remaining';
+    }
 }
