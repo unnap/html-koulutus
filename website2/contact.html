@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Harjoitus</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/forms2.js"></script>
+  <script src="js/forms.js"></script>
   <!--<script>
     function validateForm() {
     var x = document.forms["nonsense"]["nimi"].value;
@@ -47,13 +47,13 @@
 				<fieldset>
 				<legend>Testitestitesti</legend>
 					<p>
-						<label>Nimi</label>
+						<label>Nimi<abbr title="pakollinen">*</abbr></label>
 						<br />
 						<input type="text" name="nimi" placeholder="Nimi" id="nimi"
             maxlength="30">
 					</p>
           <p>
-            <label>Ikä</label>
+            <label>Ikä<abbr title="pakollinen">*</abbr></label>
             <br />
             <input name="ika" placeholder="Älä ole alle 18v"
             maxlength="3" id="age">
@@ -64,7 +64,7 @@
 						<input type="password" name="salasana">
 					</p>-->
 					<p>
-						<label>Pähkinä</label>
+						<label>Pähkinä<abbr title="pakollinen">*</abbr></label>
 						<br />
 						<select name="nuts">
               <option value="valitse" selected>[VALITSE YKSI]</option>
@@ -77,7 +77,7 @@
 					<p>
 						<table>
 							<tr>
-								<td colspan="2"><label>Väri</label></td>
+								<td colspan="2"><label>Väri<abbr title="pakollinen">*</abbr></label></td>
 							</tr>
 							<tr>
 								<td>
@@ -102,7 +102,7 @@
               <legend>Eläin<abbr title="pakollinen">*</abbr></legend>-->
 						<table>
 							<tr>
-								<td colspan="2"><label>Eläin</label></td>
+								<td colspan="2"><label>Eläin<abbr title="pakollinen">*</abbr></label></td>
 							</tr>
 							<tr>
 								<td>
@@ -126,9 +126,7 @@
 					<p>
 						<label>Viesti</label>
 						<br />
-						<textarea name="viesti" id="viesti" placeholder="Viesti tähän" onkeyup="countChars(this);"></textarea>
-            <br />
-            <span id="charNum">200</span> characters remaining
+						<textarea name="viesti" id="viesti" maxlength="200" placeholder="Viesti tähän"></textarea>
 					</p>
 					<p>
 						<input type="submit" value="Lähetä">
