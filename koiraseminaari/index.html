@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="valid.js"></script>
+</head>
+<body>
+  <div id="valSummary"></div>
+  <form action="" method="post" name="formi" onsubmit="return validateForm()">
+    <p><input type="text" name="enimi" placeholder="Etunimi" id="enimi" /></p>
+    <p><input type="text" name="snimi" placeholder="Sukunimi" id="snimi" /></p>
+    <p><input type="text" name="losoite" placeholder="Lähiosoite" id="losoite" /></p>
+    <p><input type="text" name="postinro" placeholder="Postinumero" id="postinro" /></p>
+    <p><input type="text" name="postitp" placeholder="Postitoimipaikka" id="postitp" /></p>
+    <p><input type="text" name="puh" placeholder="Puhelin" id="puh" /></p>
+    <p><input type="text" name="email" placeholder="Sähköposti" id="email" /></p>
+    <p><input type="text" name="org" placeholder="Työnantaja / Koulu" id="org" /></p>
+    <p><input type="text" name="ammatti" placeholder="Ammatti" id="ammatti" /></p>
+    <p><select name="bd" id="bd">
+      <option value="choose" selected>Päivä</option>
+      <option value="something">blep</option>
+    </select>
+    <select name="bm" id="bm">
+      <option value="choose" selected>Kuukausi</option>
+      <option value="something">blep</option>
+    </select>
+    <select name="by" id="by">
+      <option value="choose" selected>Vuosi</option>
+      <option value="something">blep</option>
+    </select></p>
+    <p><select name="hinta">
+      <option value="choose" selected>Hinta</option>
+    <option value="something">blep</option>
+  </select></p>
+    <p><input type="text" name="ruoka" placeholder="Ruoka" id="ruoka" /></p>
+    <p><textarea name="lisat" placeholder="Lisätietoja" id="lisat"></textarea></p>
+    <p><input type="submit" value="Lähetä" /></p>
+  </form>
+</body>
+</html>
